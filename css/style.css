@@ -1,0 +1,87 @@
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wr_centr{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 100%;
+}
+.flex_top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 1157px;
+}
+.top_wrap{
+	background-color: #ECEEF4;
+	height: 62px;
+}
+.midl_wrap{
+	height: 217px;
+}
+.bottom_wrap{
+	border-top:1px solid #ECEEF4;
+	height: 85px;
+}
+.section_sl{
+	background-image: url(../images/iback.png);
+	width: 100%;
+	height: 885px;
+	background-position: center center;
+}
+
+
+
+.section_info{
+	height: 420px;
+}
+
+.section_skills{
+	height: 948px;
+}
+.skills_blok{
+	position: relative;
+	overflow: hidden;
+}
+.duga{
+	position: absolute;
+	left: -25%;
+	top: 0;
+	width: 150%;
+	border-radius: 100% / 17%;
+	border-top: 3px solid #ECEEF4;
+	height: 100%;
+}
+
+
+.section_project{
+	position: absolute;
+	left: -50%;
+	width: 200%;
+	border-top-left-radius: 100% 20%;
+	border-top-right-radius: 100% 20%;
+	height: 1073px;
+	background-color: #EFEFEF;
+}
