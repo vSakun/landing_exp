@@ -326,6 +326,7 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	border-left: 1px solid #ECEEF4;
+	position: relative;
 }
 #glob_mn li:hover > a{
 	color: #1FAAE2;
@@ -337,6 +338,22 @@ section{
 	margin: 0 23px 0 23px;
 	color: #6D6E71;
 	font-size: 13px;
+}
+#glob_mn li::after{
+	content: "";
+	border-top: 7px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 7px solid #1FAAE2;
+	margin-left: -15px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	width: 0;
+	opacity: 0;
+}
+#glob_mn li:hover::after{
+	opacity: 1
 }
 
 
