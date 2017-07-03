@@ -308,6 +308,7 @@ section{
 	justify-content: center;
 	align-items: center;
 	width: 79px;
+	cursor: pointer;
 }
 .inf_item:hover .obr_i > i{
 	color: #1FAAE2;
