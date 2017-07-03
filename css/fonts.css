@@ -5,19 +5,19 @@
 	font-weight: normal;
 }
 @font-face {
-	font-family: "Open Sans Light";
-	src: url("../font/Open Sans Light.ttf") format("truetype");
+	font-family: "OpenSansLight";
+	src: url("../font/OpenSansLight.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: "Open Sans";
-	src: url("../font/Open Sans.ttf") format("truetype");
+	font-family: "OpenSans";
+	src: url("../font/OpenSans.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: "Open Sans Semibold";
+	font-family: "OpenSansSemibold";
 	src: url("../font/Open Sans Semibold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
