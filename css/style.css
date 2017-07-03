@@ -59,8 +59,8 @@ section{
 .topit_mn{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
+	align-items: stretch;
 	margin: 0 2.5px 0 2.5px;
 	width: 98px;
 	height: 32px;
@@ -70,10 +70,22 @@ section{
 .topit_mn a{
 	color: #6D6E71;
 	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	transition: all .5s;
+}
+.topit_mn a:hover{
+	color: #1FAAE2;
+	transition: all .5s;
 }
 .topit_mn i{
-	color: #6D6E71;
 	font-size: 20px;
+}
+.topit_mn p{
+	margin-right: 10px;
 }
 .top_soc{
 	display: flex;
@@ -107,6 +119,11 @@ section{
 }
 .top_soc a{
 	font-size: 26px;
+	transition: all .2s;
+}
+.top_soc a:hover{
+	font-size: 32px;
+	transition: all .2s;
 }
 .top_wrap{
 	background-color: #ECEEF4;
@@ -159,19 +176,20 @@ section{
 }
 .inf_item:hover ~ .act .obr_i i{
 	color: #6D6E71;
-	font-size: 30px;
+	transition: all 1s;
 }
 .act .obr_a .width_a{
 	display: block;
 }
 .act .obr_i i{
 	color: #1FAAE2;
-	font-size: 32px;
+	font-size: 30px;
 }
 
 .inf_item i{
 	font-size: 30px;
 	color: #6D6E71;
+	transition: all 1s;
 }
 .obr_a{
 	display: flex;
@@ -206,6 +224,9 @@ section{
 	font-family: "OpenSansLight";
 	font-size: 16px;
 	color: #7A7B7D;
+}
+.width_a a:hover{
+	color: #1FAAE2;
 }
 .width_a:hover{
 	display: block;
@@ -289,8 +310,8 @@ section{
 	width: 79px;
 }
 .inf_item:hover .obr_i > i{
-	font-size: 32px;
 	color: #1FAAE2;
+	transition: all .2s;
 }
 .inf_item:hover > .obr_a .width_a{
 	display: block;
@@ -330,6 +351,7 @@ section{
 }
 #glob_mn li:hover > a{
 	color: #1FAAE2;
+	transition: all .5s;
 }
 #glob_mn li:first-child{
 	border-left: none;
@@ -338,6 +360,7 @@ section{
 	margin: 0 23px 0 23px;
 	color: #6D6E71;
 	font-size: 13px;
+	transition: all .5s;
 }
 #glob_mn li::after{
 	content: "";
@@ -351,11 +374,34 @@ section{
 	bottom: 0px;
 	width: 0;
 	opacity: 0;
+	transition: all .5s;
 }
 #glob_mn li:hover::after{
-	opacity: 1
+	opacity: 1;
+	transition: all .5s;
 }
-
+#search{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-family: "OpenSansLight";
+	font-size: 15px;
+}
+#search input{
+	border: none;
+}
+#search label{
+	color: #6D6E71;
+	font-size: 25px;
+}
+#search form{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 210px;
+}
 
 .section_sl{
 	background-image: url(../images/iback.png);
