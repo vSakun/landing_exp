@@ -45,6 +45,17 @@ h5{
 	font-size: 26px;
 	color: #6D6E71;
 }
+h4{
+	font-size: 17px;
+	font-family: "OpenSansLight";
+	color: #6D6E71;
+	font-weight: 500;
+}
+h3{
+	font-family: "OpenSansBold";
+	color: #6D6E71;
+	font-size: 44px;
+}
 p{
 	font-family: "OpenSansLight";
 	color: #6D6E71;
@@ -522,8 +533,8 @@ section{
 	z-index: 2;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-items: stretch;
+	justify-content: flex-start;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 }
@@ -532,20 +543,54 @@ section{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	height: 27%;
+}
+.we_do .whwh_blok{
+	margin: 0;
+	padding-top: 0;
 }
 .blok_we{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: stretch;
+	height: 65%;
 }
 .halp_blok_column{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: stretch;
+	width: 50%;
+}
+.halp_blok_column:last-child{
+	border-left: 2px solid #EAECED;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	align-items: stretch;
 }
-
+.elements_we{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.elements_we .whwh_blok{
+	margin: 0;
+	padding: 0;
+	width: 70%;
+}
+.elements_we .whwh_blok h5{
+	font-size: 24px;
+}
+.elements_we .ob_img{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
 
 .section_project{
 	position: absolute;
