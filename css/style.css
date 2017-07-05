@@ -458,7 +458,7 @@ section{
 	width: 100%;
 	height: 885px;
 	background-position: center center;
-	background-repeat: none;
+	background-repeat: no-repeat;
 }
 .title_blok{
 	display: flex;
@@ -584,6 +584,9 @@ section{
 .elements_we .whwh_blok h5{
 	font-size: 24px;
 }
+.elements_we .whwh_blok p{
+	width: 90%;
+}
 .elements_we .ob_img{
 	display: flex;
 	flex-direction: row;
@@ -600,4 +603,13 @@ section{
 	border-top-right-radius: 100% 35%;
 	height: 1073px;
 	background-color: #EFEFEF;
+}
+.proj .whwh_blok{
+	width: 50%;
+	height: 45%;
+	justify-content: flex-end;
+}
+
+.section_team{
+	height: 770px;
 }
