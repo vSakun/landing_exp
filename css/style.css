@@ -595,6 +595,9 @@ section{
 	width: 30%;
 }
 
+#project_ob{
+	height: 1073px; 
+}
 .section_project{
 	position: absolute;
 	left: -50%;
@@ -612,4 +615,17 @@ section{
 
 .section_team{
 	height: 770px;
+}
+.team_row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.item_team{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F5F5F5;
 }
