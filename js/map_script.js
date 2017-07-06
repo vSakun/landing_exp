@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
     //Местоположение: долгота, широта и коэффициент увеличения
-    var latitude = 53.356525,
-        longitude = -6.253810,
-        map_zoom = 18;
+    var latitude = 53.903520,
+        longitude = 27.560333,
+        map_zoom = 17;
 
     //Адрес до иконки с маркером
     var marker_url = "../landing_exp/images/marker.png";
