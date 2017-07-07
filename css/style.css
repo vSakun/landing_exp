@@ -802,10 +802,12 @@ footer{
 .foot .lf_mn{
 	justify-content: flex-end;
 	align-items: center;
+	width: 50%;
 }
 .foot .rg_mn{
 	justify-content: flex-start;
 	align-items: center;
+	width: 50%;
 }
 .foot .rg_mn p{
 	font-size: 13px;
@@ -852,4 +854,35 @@ footer{
 	color: #1FAAE2;
 	transition: all .5s;
 	background-color: #6D6E71;
+}
+.foot .top_soc{
+	height: 100%;
+}
+.foot .top_soc .item_soc{
+	height: 100%;
+	border-left: 1px solid #3C3E3F;
+}
+.foot .top_soc .item_soc:last-child{
+	height: 100%;
+	border-right: 1px solid #3C3E3F;
+}
+.foot .top_soc .item_soc .fa{
+	color: #414344;
+	font-size: 32px;
+}
+.foot .top_soc .item_soc:hover > .fa-facebook-square{
+	color: #2B75B2;
+	font-size: 32px;
+}
+.foot .top_soc .item_soc:hover > .fa-twitter{
+	color: #1FAAE2;
+	font-size: 32px;
+}
+.foot .top_soc .item_soc:hover > .fa-instagram{
+	color: #26658E;
+	font-size: 32px;
+}
+.foot .top_soc .item_soc:hover > .fa-google-plus{
+	color: #DD4070;
+	font-size: 32px;
 }
