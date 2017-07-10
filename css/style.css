@@ -650,12 +650,17 @@ section{
 	transition: all .5s;
 }
 .mnu_item:hover{
+	border-color: #ffffff;
 	background-color: #ffffff;
 	transition: all .5s;
 }
+.mnu_item span{
+	color: #CECECE;
+	transition: color .5s;
+}
 .mnu_item:hover > span{
 	color: #6D6E71;
-	transition: all .5s;
+	transition: color .5s;
 }
 .mnu_item:last-clild{
 	margin: 0;
