@@ -604,7 +604,7 @@ section{
 }
 
 #project_ob{
-	height: 1073px; 
+	min-height: 1073px; 
 }
 .section_project{
 	position: absolute;
@@ -620,7 +620,109 @@ section{
 	height: 45%;
 	justify-content: flex-end;
 }
-
+.sort_proj{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.sort_proj nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 50px 0;
+}
+.mnu_item{
+	height: 41px;
+	border-radius: 5px;
+	border: 2px solid #CECECE;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	flex-basis: auto;
+	transition: all .5s;
+}
+.mnu_item:hover{
+	background-color: #ffffff;
+	transition: all .5s;
+}
+.mnu_item:hover > span{
+	color: #6D6E71;
+	transition: all .5s;
+}
+.mnu_item:last-clild{
+	margin: 0;
+}
+.mnu_item span{
+	padding: 0 30px;
+	font-family: "OpenSansBold";
+	font-size: 15px;
+	color: #CECECE;
+}
+.link_mnu a{
+	color: #C7C9CE;
+	transition: all .5s;
+}
+.link_mnu a:hover{
+	color: #6D6E71;
+	transition: all .5s;
+}
+.list_proj{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 67%;
+}
+.list_item{
+	height: 270px;
+	width: 280px;
+	background-color: #ffffff;
+	border-radius: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+}
+.wrap_img{
+	width: 260px;
+	height: 85vh;
+	background-color: #F5F5F5;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.link_mnu{
+	width: 100%;
+	height: 15vh;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.link_mnu a{
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 25px;
+}
+.link_mnu a:first-child{
+	border-right: 1px solid #EFEFEF;
+}
 
 
 .section_team{
