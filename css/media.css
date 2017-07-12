@@ -9,11 +9,30 @@
 	.flex_top{
 		width: 1000px;
 	}
-	#project_ob{
-		min-height: 1222px;
-	}
 	.elements_we{
 		height: 47%;
+	}
+	.inform_blok .halp_blok{
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.inform_blok .whwh_blok{
+		align-items: center;
+	}
+	.list_item{
+		width: 22%;
+		height: initial;
+	}
+	.wrap_img{
+		width: 90%;
+		height: initial;
+	}
+	.link_mnu a{
+		font-size: 18px;
+	}
+	.link_mnu{
+		height: 3vh;
 	}
 }
 
@@ -21,9 +40,7 @@
 @media only screen and (max-width : 992px) {
 	.flex_top{
 		width: 800px;
-	}
-	#project_ob{
-		min-height: 1571px;
+		justify-content: space-around;
 	}
 	.list_proj{
 		justify-content: space-around;
@@ -38,18 +55,85 @@
 	.mnu_item span{
 		padding: 0 20px;
 	}
+	.elements_we {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 400px;
+  }
+  .blok_we .whwh_blok{
+		align-items: center;
+	}
+	.blok_we .whwh_blok h5{
+		text-align: center;
+	}
+	.elements_we .whwh_blok p{
+		width: 100%;
+	}
+	#glob_mn ul{
+		justify-content: space-around;
+		border: 1px solid #ECEEF4;
+		border-top: none;
+	}
+	#glob_mn li{
+		width: 30%;
+		border: none;
+	}
+	#glob_mn li:hover::after {
+    opacity: 0;
+    transition: all .5s;
+	}
+	.inform_blok{
+		justify-content: space-around;
+	}
+	.list_item{
+		width: 22%;
+		height: initial;
+	}
+	.wrap_img img{
+		width: 150px;
+	}
+	.link_mnu a{
+		font-size: 14px;
+	}
+	.link_mnu{
+		height: 2vh;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.flex_top{
 		width: 600px;
-	}
-	#project_ob{
-		min-height: 1640px;
+		justify-content: space-around;
 	}
 	.sort_proj nav{
 		width: 80%;
+	}
+	#glob_mn ul{
+		justify-content: space-around;
+		border: 1px solid #ECEEF4;
+		border-top: none;
+	}
+	#glob_mn li{
+		width: 30%;
+		border: none;
+	}
+	.top_soc{
+		height: 40px;
+	}
+	.foot .lf_mn {
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 300px;
+  }
+  .foot .rg_mn {
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 300px;
+  }
+  .wrap_img img{
+		width: 100px;
 	}
 }
 	
@@ -79,7 +163,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+	.halp_blok_column{
+		width: 100%;
+	}
 }
 
 /* Custom, iPhone Retina */
