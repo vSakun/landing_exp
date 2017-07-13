@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	text-transform: uppercase;
 	color: #ffffff;
-	font-size: 57px;
+	font-size: 3.56rem;
 	font-weight: 500;
 	z-index: 2;
 	position: absolute;
@@ -28,25 +28,25 @@ h2{
 	color: #ffffff;
 	z-index: 1;
 	font-weight: 100;
-	font-size: 45px;
+	font-size: 2.81rem;
 	text-shadow: 1px 1px 1px #000;
 }
 h2 span{
 	color: #BBEDFF;
-	font-size: 120px;
+	font-size: 7.5rem;
 	font-weight: 900;
 	font-family: "OpenSansBold";
 }
 h6{
 	color: #3687C4;
-	font-size: 32px;
+	font-size: 2rem;
 }
 h5{
-	font-size: 26px;
+	font-size: 1.62rem;
 	color: #6D6E71;
 }
 h4{
-	font-size: 17px;
+	font-size: 1.06rem;
 	font-family: "OpenSansLight";
 	color: #6D6E71;
 	font-weight: 500;
@@ -54,11 +54,12 @@ h4{
 h3{
 	font-family: "OpenSansBold";
 	color: #6D6E71;
-	font-size: 44px;
+	font-size: 2.75rem;
 }
 p{
 	font-family: "OpenSansLight";
 	color: #6D6E71;
+	font-size: 16px;
 }
 a{
 	font-family: "OpenSansBold";
@@ -112,14 +113,13 @@ section{
 	justify-content: space-between;
 	align-items: stretch;
 	margin: 0 2.5px 0 2.5px;
-	width: 98px;
+	width: 50px;
 	height: 32px;
 	background-color: #ffffff;
 	border-radius: 5px;
 }
 .topit_mn a{
 	color: #6D6E71;
-	font-size: 12px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -137,12 +137,11 @@ section{
 }
 .topit_mn p{
 	transition: color .5s;
+	display: none;
+	font-size: .9em;
 }
 .topit_mn i{
-	font-size: 20px;
-}
-.topit_mn p{
-	margin-right: 10px;
+	font-size: 1.1em;
 }
 .top_soc{
 	display: flex;
@@ -157,7 +156,7 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	border-left: 1px solid #DEE0E6;
-	width: 64px;
+	width: 25%;
 }
 .item_soc:last-child{
 	border-right: 1px solid #DEE0E6;
@@ -175,16 +174,16 @@ section{
 	color: #DD4070;
 }
 .top_soc a{
-	font-size: 26px;
+	font-size: 1.62em;
 	transition: all .2s;
 }
 .top_soc a:hover{
-	font-size: 32px;
+	font-size: 2em;
 	transition: all .2s;
 }
 .top_wrap{
 	background-color: #ECEEF4;
-	min-height: 62px;
+	height: 62px;
 }
 .midl_wrap{
 	height: 217px;
@@ -240,11 +239,11 @@ section{
 }
 .act .obr_i i{
 	color: #1FAAE2;
-	font-size: 30px;
+	font-size: 1.85em;
 }
 
 .inf_item i{
-	font-size: 30px;
+	font-size: 1.85em;
 	color: #6D6E71;
 	transition: all 1s;
 }
@@ -279,7 +278,7 @@ section{
 }
 .width_a a{
 	font-family: "OpenSansLight";
-	font-size: 16px;
+	font-size: 1em;
 	color: #7A7B7D;
 }
 .width_a a:hover{
@@ -414,11 +413,15 @@ section{
 	border-left: none;
 }
 #glob_mn li a{
-	margin: 0 23px 0 23px;
+	padding: 0 23px 0 23px;
 	color: #6D6E71;
-	font-size: 13px;
+	font-size: .81em;
 	transition: all .5s;
 	z-index: 1;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 #glob_mn li::after{
 	content: "";
@@ -445,14 +448,14 @@ section{
 	justify-content: space-around;
 	align-items: center;
 	font-family: "OpenSansLight";
-	font-size: 15px;
+	font-size: .93em;
 }
 #search input{
 	border: none;
 }
 #search label{
 	color: #6D6E71;
-	font-size: 25px;
+	font-size: 1.65em;
 }
 #search form{
 	display: flex;
@@ -513,6 +516,7 @@ section{
 .section_info img{
 	display: flex;
 	padding: 31px 0 0 0;
+	width: 18%;
 }
 .section_info p{
 	display: flex;
@@ -602,6 +606,9 @@ section{
 	justify-content: center;
 	align-items: center;
 	width: 30%;
+}
+.elements_we .ob_img img{
+	width: 50%;
 }
 
 #project_ob{
