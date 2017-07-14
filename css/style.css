@@ -100,6 +100,7 @@ section{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding: 20px 0;
 }
 .topit_mn:first-child{
 	margin-left: 0;
@@ -278,7 +279,7 @@ section{
 }
 .width_a a{
 	font-family: "OpenSansLight";
-	font-size: 1em;
+	font-size: 1.2em;
 	color: #7A7B7D;
 }
 .width_a a:hover{
@@ -522,6 +523,15 @@ section{
 	display: flex;
 	text-align: justify;
 }
+.ob_img{
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ob_img img{
+	width: 80%;
+}
 
 
 .section_skills{
@@ -563,8 +573,8 @@ section{
 }
 .blok_we{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-flow: row wrap;
+	justify-content: space-around;
 	align-items: stretch;
 	margin: 30px 0;
 }
@@ -573,7 +583,8 @@ section{
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: stretch;
-	width: 50%;
+	width: 49%;
+	min-width: 250px;
 }
 .halp_blok_column:last-child{
 	border-left: 2px solid #EAECED;
@@ -595,7 +606,7 @@ section{
 	width: 70%;
 }
 .elements_we .whwh_blok h5{
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 .elements_we .whwh_blok p{
 	width: 90%;
@@ -608,11 +619,11 @@ section{
 	width: 30%;
 }
 .elements_we .ob_img img{
-	width: 50%;
+	width: 30%;
 }
 
 #project_ob{
-	min-height: 1073px;
+	min-height: 919px;
 	position: relative;
 	flex-direction: row;
 	justify-content: center;
@@ -687,6 +698,13 @@ section{
 }
 .link_mnu a{
 	color: #C7C9CE;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 1.3em;
 	transition: all .5s;
 }
 .link_mnu a:hover{
@@ -723,20 +741,11 @@ section{
 }
 .link_mnu{
 	width: 100%;
-	height: 15vh;
+	height: 12vh;
 	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-.link_mnu a{
-	width: 50%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	font-size: 25px;
 }
 .link_mnu a:first-child{
 	border-right: 1px solid #EFEFEF;
@@ -770,13 +779,16 @@ section{
 }
 .item_team span{
 	font-family: "OpenSansBold";
-	font-size: 24px;
+	font-size: 1.5rem;
 	color: #6D6E71;
 }
 .item_team p{
 	font-weight: 500;
 	padding: 0;
 	margin: 0;
+}
+.item_team img{
+	width: 50%;
 }
 .inf_team{
 	display: flex;
@@ -916,6 +928,9 @@ footer{
 .foot .flex_top{
 	height: 50%;
 }
+.foot .flex_top:last-child .halp_blok{
+	    align-items: flex-start;
+}
 .foot .topit_mn{
 	margin: 0;
 	width: none;
@@ -985,11 +1000,7 @@ footer{
 }
 .foot .top_soc .item_soc{
 	height: 100%;
-	border-left: 1px solid #3C3E3F;
-}
-.foot .top_soc .item_soc:last-child{
-	height: 100%;
-	border-right: 1px solid #3C3E3F;
+	border: none;
 }
 .foot .top_soc .item_soc .fa{
 	color: #414344;

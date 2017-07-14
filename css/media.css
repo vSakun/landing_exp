@@ -9,9 +9,6 @@
 	.flex_top{
 		width: 1000px;
 	}
-	.elements_we{
-		height: 47%;
-	}
 	.inform_blok .halp_blok{
 		flex-direction: column;
 		align-items: center;
@@ -29,7 +26,14 @@
 		height: initial;
 	}
 	.link_mnu{
-		height: 3vh;
+		height: 7vh;
+	}
+	.item_team{
+		height: 260px;
+		width: 230px;
+	}
+	.whwh_blok{
+		padding: 0;
 	}
 }
 
@@ -53,21 +57,18 @@
 	.list_proj{
 		justify-content: space-around;
 	}
-	.sort_proj nav{
-		width: 90%;
-	}
 	.mnu_item{
 		margin-top: 10px;
 		margin-right: 10px;
+		height: initial;
 	}
 	.mnu_item span{
-		padding: 0 20px;
+		padding: 10px 10px;
 	}
 	.elements_we {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		min-height: 400px;
 	}
 	.blok_we .whwh_blok{
 		align-items: center;
@@ -101,11 +102,14 @@
 	.wrap_img img{
 		width: 150px;
 	}
-	.link_mnu{
-		height: 2vh;
-	}
 	.top_soc{
 		width: 209px;
+	}
+	.team_row{
+		width: 80%;
+	}
+	#project_ob{
+		min-height: 750px;
 	}
 }
 
@@ -122,18 +126,12 @@
 	.topit_mn i{
 		font-size: 1.7em;
 	}
-	.top_exempl{
-		width: 50%;
-	}
 	.top_soc{
 		width: 50%;
 	}
 	.flex_top{
 		width: 600px;
 		justify-content: space-around;
-	}
-	.sort_proj nav{
-		width: 80%;
 	}
 	#glob_mn ul{
 		justify-content: space-around;
@@ -159,6 +157,43 @@
 	}
 	.wrap_img img{
 		width: 100px;
+	}
+	.item_team{
+		margin: 10px 0;
+	}
+	#project_ob{
+		min-height: 619px;
+	}
+}
+@media only screen and (max-width : 618px) {
+	html{
+		font-size: 10px;
+	}
+	.halp_blok_column{
+		width: 100%;
+	}
+	.elements_we{
+		min-height: initial;
+	}
+	.halp_blok_column:last-child{
+		border: none;
+	}
+	.elements_we .ob_img img{
+		margin-bottom: 20px;
+	}
+	.top_exempl{
+		padding: 0;
+	}
+	.whwh_blok{
+		padding: 0;
+	}
+	.halp_blok{
+		width: 90%;
+	}
+}
+@media only screen and (max-width : 480px) {
+	html{
+		font-size: 10px;
 	}
 }
 
@@ -187,11 +222,7 @@
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-	html{
-		width: 10px;
-	}
-}
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
