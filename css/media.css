@@ -21,13 +21,6 @@
 		width: 22%;
 		height: initial;
 	}
-	.wrap_img{
-		width: 90%;
-		height: initial;
-	}
-	.link_mnu{
-		height: 7vh;
-	}
 	.item_team{
 		height: 260px;
 		width: 230px;
@@ -99,9 +92,6 @@
 		width: 22%;
 		height: initial;
 	}
-	.wrap_img img{
-		width: 150px;
-	}
 	.top_soc{
 		width: 209px;
 	}
@@ -155,9 +145,6 @@
 		align-items: flex-end;
 		min-width: 300px;
 	}
-	.wrap_img img{
-		width: 100px;
-	}
 	.item_team{
 		margin: 10px 0;
 	}
@@ -190,10 +177,50 @@
 	.halp_blok{
 		width: 90%;
 	}
+	#project_ob {
+    min-height: 524px;
+	}
+	.ob_img img {
+    width: 100%;
+	}
 }
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 495px) {
 	html{
 		font-size: 10px;
+	}
+	#project_ob {
+    min-height: 466px;
+	}
+	.whwh_blok {
+    align-items: center;
+    text-align: center;
+	}
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h2 span{
+		font-size: 63px;
+	}
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	#project_ob {
+    min-height: 400px;
+	}
+	.mnu_item span {
+    padding: 2px 3px;
+	}
+	.link_mnu a{
+		padding-top: 1px;
+	}
+	.ob_img img {
+    width: 100%;
+	}
+	.ob_img{
+		width: 29%;
 	}
 }
 
@@ -224,10 +251,7 @@
 /* Extra Small Devices, Phones */
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 
-}
 
 
 /*==========  Mobile First Method  ==========*/
