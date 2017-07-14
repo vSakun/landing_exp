@@ -87,6 +87,14 @@ section{
 	justify-content: center;
 	align-items: center;
 }
+.slider_section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.wr_centr img{
+	width: 100%;
+}
 .flex_top{
 	display: flex;
 	flex-flow: row wrap;
@@ -100,7 +108,6 @@ section{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0;
 }
 .topit_mn:first-child{
 	margin-left: 0;
@@ -466,13 +473,12 @@ section{
 	width: 210px;
 }
 /* Слайдер */
-.section_sl{
-	background-image: url(../images/iback.png);
-	background-size:contain;
-	width: 100%;
-	padding: 18.9% 0;
-	background-position: center center;
-	background-repeat: no-repeat;
+.img_sl{
+ z-index: 0;
+}
+.slider_section .flex_top{
+	position: absolute;
+	z-index: 1;
 }
 .title_blok{
 	display: flex;
@@ -956,6 +962,9 @@ footer{
 	font-size: 13px;
 	font-weight: 700;
 }
+.foot .top_exempl{
+	padding: 20px 0;
+}
 #contact_mail{
 	width: 100%;
 	height: 70px;
@@ -982,6 +991,18 @@ footer{
 	background-color: transparent;
 	width: 55%;
 	height: 90%;
+}
+#contact_mail .input_text::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6B6F71;
+}
+#contact_mail .input_text::-moz-placeholder { /* Firefox 19+ */
+  color: #6B6F71;
+}
+#contact_mail .input_text:-ms-input-placeholder { /* IE 10+ */
+  color: #6B6F71;
+}
+#contact_mail .input_text:-moz-placeholder { /* Firefox 18- */
+  color: #6B6F71;
 }
 #contact_mail .but_in{
 	border: none;

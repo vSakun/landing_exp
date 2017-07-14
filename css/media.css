@@ -168,7 +168,7 @@
 	.elements_we .ob_img img{
 		margin-bottom: 20px;
 	}
-	.top_exempl{
+	.foot .top_exempl{
 		padding: 0;
 	}
 	.whwh_blok{
@@ -207,6 +207,15 @@
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	h1{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 15px;
+	}
+	h2 span{
+		font-size: 58px;
+	}
 	#project_ob {
     min-height: 400px;
 	}
