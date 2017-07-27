@@ -6,9 +6,25 @@ $(document).ready(function () {
     var windowScroll = $(window).scrollTop(); //Получаем величину, показывающую на сколько прокручено окно
 
     if (windowScroll > topOfObjToStick) { // Если прокрутили больше, чем расстояние до блока, то приклеиваем его
-    	$(objToStick).addClass("topWindow");
+    	if($(window).width() > 768){
+    		$('header .bottom_wrap .flex_top').addClass("top_fix");
+    	}
+    	else{
+    		$(objToStick).css({"position":"fixed","top":"0"});
+    		$('#glob_mn').css({"opacity":"0","transition":"opacity .1s","z-index":"1"});
+    		$('#smal_mn').css({"width":"10%","cursor":"pointer","transition":"width .5s"});
+    		$('.back_mn').css({"opacity":"0","display":"none"});
+    	};
     } else {
-    	$(objToStick).removeClass("topWindow");
+    	if($(window).width() > 768){
+    		$('header .bottom_wrap .flex_top').removeClass("top_fix");
+    	}
+    	else{
+    		$(objToStick).css({"position":"absolute","top":"none"});
+    		$('#glob_mn').css({"opacity":"1","transition":"opacity 3s","z-index":"5"});
+    		$('#smal_mn').css({"width":"100%","cursor":"default"});
+    		$('.back_mn').css({"opacity":"1","display":"block"});
+    	};
     };
   });
 });
@@ -23,7 +39,7 @@ $(function(){
 $(function(){
 	$('.back_mn').on('click',function(){
 		$('#glob_mn').css({"opacity":"0","transition":"opacity .1s","z-index":"1"});
-		$('#smal_mn').css({"width":"none","cursor":"pointer","transition":"width .5s"});
+		$('#smal_mn').css({"width":"10%","cursor":"pointer","transition":"width .5s"});
 		$('.back_mn').css({"opacity":"0","display":"none"});
 	});
 })

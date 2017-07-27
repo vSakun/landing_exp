@@ -126,21 +126,26 @@
 		width: 100%;
 	}
 	#glob_mn{
-		opacity: 0;
-		/* position: fixed; */
+		opacity: 1;
+		position: fixed;
 		height: 40px;
 		justify-content: center;
 		align-items: center;
-		color: white;
+		color: #ffffff;
 		transition: opacity 1.5s;
+		z-index: 5;
 	}
 	#smal_mn{
 		display: block;
 	}
+	.back_mn{
+	opacity: 1;
+	display: block;
+	}
 	#glob_mn li a{
 		color: #ffffff;
 	}
-	#glob_mn li a:hover{
+	#glob_mn li > a:hover{
 		color: #BBEDFF;
 	}
 	#glob_mn li:hover::after{
