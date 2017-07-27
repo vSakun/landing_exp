@@ -127,7 +127,7 @@
 	}
 	#glob_mn{
 		opacity: 0;
-		position: fixed;
+		/* position: fixed; */
 		height: 40px;
 		justify-content: center;
 		align-items: center;

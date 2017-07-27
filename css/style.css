@@ -476,7 +476,7 @@ section{
 }
 #smal_mn{
 	display: none;
-	position: fixed;
+	/* position: fixed; */
 	background-color: rgba(50, 130, 183, .7);
 	width: 10%;
 	height: 40px;
@@ -495,12 +495,17 @@ section{
 .back_mn{
 	opacity: 0;
 	display: none;
-	position: fixed;
-	right: 0;
+	/* position: fixed;
+	right: 0; */
 	cursor: pointer;
 	border: 20px solid transparent;
 	border-right: 20px solid rgba(50, 130, 183, 1);
 	z-index: 6;
+}
+.topWindow {
+	position: fixed;
+	top: 0;
+	z-index:9999; /* Чтобы приклеенный элемент располагался над всеми остальными элементами страницы */
 }
 /* Слайдер */
 .img_sl{
