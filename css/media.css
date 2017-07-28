@@ -72,14 +72,14 @@
 	.elements_we .whwh_blok p{
 		width: 100%;
 	}
-	#glob_mn ul{
+	.glob_mn ul{
 		justify-content: space-around;
 		border-top: none;
 	}
-	#glob_mn li{
+	.glob_mn li{
 		border: none;
 	}
-	#glob_mn li a{
+	.glob_mn li a{
 		padding: 0 8px 0 8px;
 		font-size: 12px;
 	}
@@ -117,38 +117,36 @@
 	.top_soc{
 		width: 50%;
 	}
-	.flex_top{
-		width: 600px;
+	.bottom_wrap .flex_top{
+		width: 100%;
 		justify-content: space-around;
 	}
 	nav{
 		position: relative;
 		width: 100%;
 	}
-	#glob_mn{
-		opacity: 1;
-		position: fixed;
+	.glob_mn{
+		position: absolute;
 		height: 40px;
 		justify-content: center;
 		align-items: center;
 		color: #ffffff;
-		transition: opacity 1.5s;
-		z-index: 5;
+		width: 100%;
 	}
-	#smal_mn{
+	.smal_mn{
 		display: block;
 	}
 	.back_mn{
 	opacity: 1;
 	display: block;
 	}
-	#glob_mn li a{
+	.glob_mn li a{
 		color: #ffffff;
 	}
-	#glob_mn li > a:hover{
+	.glob_mn li > a:hover{
 		color: #BBEDFF;
 	}
-	#glob_mn li:hover::after{
+	.glob_mn li:hover::after{
 		opacity: 0;
 		transition: all .5s;
 	}
@@ -251,6 +249,9 @@
 	.ob_img{
 		width: 29%;
 	}
+	.smal_mn p{
+	padding: 10px 0;
+}
 }
 
 /*Disable Animation on Mobile Devices*/

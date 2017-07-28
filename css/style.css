@@ -389,7 +389,7 @@ section{
 	border-top:1px solid #ECEEF4;
 	height: 85px;
 }
-#glob_mn{
+.glob_mn{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -397,8 +397,11 @@ section{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	opacity: 1;
+	transition: opacity 3s;
+	z-index: 5;
 }
-#glob_mn li{
+.glob_mn li{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -406,14 +409,14 @@ section{
 	border-left: 1px solid #ECEEF4;
 	position: relative;
 }
-#glob_mn li:hover > a{
+.glob_mn li:hover > a{
 	color: #1FAAE2;
 	transition: all .5s;
 }
-#glob_mn li:first-child{
+.glob_mn li:first-child{
 	border-left: none;
 }
-#glob_mn li a{
+.glob_mn li a{
 	padding: 0 23px 0 23px;
 	color: #6D6E71;
 	font-size: .81em;
@@ -424,7 +427,7 @@ section{
 	display: flex;
 	align-items: center;
 }
-#glob_mn li::after{
+.glob_mn li::after{
 	content: "";
 	border-top: 7px solid transparent;
 	border-left: 15px solid transparent;
@@ -439,7 +442,7 @@ section{
 	transition: all .5s;
 	z-index: 0;
 }
-#glob_mn li:hover::after{
+.glob_mn li:hover::after{
 	opacity: 1;
 	transition: all .5s;
 }
@@ -465,7 +468,7 @@ section{
 	align-items: center;
 	width: 210px;
 }
-#smal_mn{
+.smal_mn{
 	display: none;
 	position: absolute; 
 	background-color: rgba(50, 130, 183, .7);
@@ -473,13 +476,26 @@ section{
 	height: 40px;
 	z-index: 5;
 	left: 0;
-	cursor: pointer;
+	cursor: default;
 	transition: width .3s;
 }
-/* #smal_mn:hover{
+.smal_mn p{
+	position: absolute;
+	color: #ffffff;
+	font-family: "OpenSansBold";
+	font-size: 1.5em;
+	margin: 0;
+	padding: 10px 10px;
+	opacity: 0;
+}
+.smal_mn .p_fix{
+	opacity: 1;
+	z-index: 6;
+}
+/* .smal_mn:hover{
 	width: 20%;
 } */
-#smal_mn::after{
+.smal_mn::after{
 	content: "";
 	position: absolute;
 	left: 100%;
@@ -496,6 +512,24 @@ section{
 	border-right: 20px solid #BBEDFF;
 	z-index: 6;
 }
+nav .all_fix{
+	position: fixed;
+	top: 0;
+}
+.smal_fix{
+	width: 10%;
+	cursor: pointer;
+	transition: width .5s;
+}
+nav .back_fix{
+	opacity: 0;
+	display: none;
+}
+.glob_fix_add{
+	opacity: 0;
+	transition: opacity .1s;
+	z-index: 1;
+}
 .top_fix{
 	position: fixed;
 	top: 0;
@@ -504,13 +538,13 @@ section{
 	border-bottom: 1px solid #ECEEF4;
 	background-color:rgba(50, 130, 183, .9);
 }
-.top_fix #glob_mn li a{
+.top_fix .glob_mn li a{
 	color: #ffffff;
 }
-.top_fix #glob_mn li::after{
+.top_fix .glob_mn li::after{
 	display: none;
 }
-.top_fix #glob_mn li:hover > a{
+.top_fix .glob_mn li:hover > a{
 	color: #1FAAE2;
 	text-shadow: 0px .5px .5px rgba(0, 0, 0, 1);
 }
