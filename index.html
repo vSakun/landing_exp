@@ -136,8 +136,8 @@
 		</header>
 		<section>
 			<div class="wr_centr slider_section">
-				<img class="img_sl" src="images/iback.png" alt="fon">
-				<img class="img_sl sl_bll" src="images/graf.png" alt="fon">
+				<img class="img_sl sl_bll act_l" src="images/iback.png" alt="fon">
+				<img class="img_sl sl_cntr" src="images/graf.png" alt="fon">
 				<img class="img_sl sl_blr" src="images/tel.png" alt="fon">
 				<div class="flex_top">
 					<div class="title_blok">
@@ -148,17 +148,21 @@
 					</div>
 					<div class="control">
 						<div class="wrap_control">
-							<div class="prev"></div>
-							<div class="mini_bt">
+							<div class="prev dot" onclick="plusSlides(-1)">
+								<i class="fa fa-chevron-left"></i>
+							</div>
+							<div class="mini_bt dot" name="first" onclick="currentSlide(1)">
 								<img src="images/iback-mini.png" alt="mini_bt">
 							</div>
-							<div class="mini_bt">
+							<div class="mini_bt" name="double" onclick="currentSlide(2)">
 								<img src="images/graf-mini.png" alt="mini_bt">
 							</div>
-							<div class="mini_bt">
+							<div class="mini_bt" name="triple" onclick="currentSlide(3)">
 								<img src="images/tel-mini.png" alt="mini_bt">
 							</div>
-							<div class="next"></div>
+							<div class="next" onclick="plusSlides(1)">
+								<i class="fa fa-chevron-right"></i>
+							</div>
 						</div>
 					</div>
 				</div>

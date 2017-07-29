@@ -81,6 +81,17 @@ section{
 	flex-direction: column;
 	justify-content: space-between;
 }
+input,textarea{
+  outline:none;
+}
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
 .wr_centr{
 	display: flex;
 	flex-direction: row;
@@ -591,20 +602,45 @@ nav .back_fix{
 	align-items: flex-start;
 	position: relative;
 }
+.slider_section .act_l{
+	opacity: 1;
+	position: relative;
+	right: 0;
+	transition: opacity 1s, right .5s;
+}
+.slider_section .act_c{
+	opacity: 1;
+	position: relative;
+	bottom: 0;
+	transition: opacity 1s, bottom .5s;
+}
+.slider_section .act_r{
+	opacity: 1;
+	position: relative;
+	left: 0;
+	transition: opacity 1s, left .5s;
+}
+.sl_cntr{
+	opacity: 0;
+	position: absolute;
+	bottom: 999px;
+	transition: bottom 1s, opacity 1s;
+}
 .sl_bll{
 	opacity: 0;
 	position: absolute;
-	left: 99999px;
+	right: 999px;
+	transition: right .3s, opacity 1s;
 }
 .sl_blr{
 	opacity: 0;
 	position: absolute;
-	right: 99999px;
+	left: 999px;
+	transition: left .3s, opacity 1s;
 }
 .control{
 	position: absolute;
 	bottom: 0px;
-	width: 100%;
 }
 .wrap_control{
 	position: relative;
@@ -618,10 +654,32 @@ nav .back_fix{
 .prev, .next{
 	width: 14%;
 	background-color: #F4F4F4;
+	display: flex;
+	font-size: 2em;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: #6D6E71;
+	transition: color .3s;
+}
+.prev:hover, .next:hover{
+	color: #1FAAE2;
+	transition: color .3s;
+	cursor: pointer;
 }
 .mini_bt{
-	height: 100%;
 	width: 24%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	transition: opacity .5s;
+	cursor: pointer;
+}
+.wrap_control .dot{
+	opacity: 0;
+	transition: opacity .5s;
+	cursor: default;
 }
 
 
