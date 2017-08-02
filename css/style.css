@@ -581,7 +581,7 @@ nav .back_fix{
 
 /* Слайдер */
 .img_sl{
-	z-index: 0;
+	z-index: -1;
 }
 .slider_section .flex_top{
 	position: absolute;
@@ -912,6 +912,7 @@ nav .back_fix{
 }
 .list_item{
 	width: 24%;
+	position: relative;
 	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
@@ -919,6 +920,24 @@ nav .back_fix{
 	align-items: center;
 	border-radius: 5px;
 	margin: 7px 0;
+	cursor: pointer;
+}
+.item_hover{
+	position: absolute;
+	opacity: 0;
+	transition: opacity .5s;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 12px rgba(50, 130, 183, .7);;
+	height: 100%;
+	z-index: -1;
+}
+.list_item:hover .item_hover,.item_team:hover .item_hover{
+	opacity: 1;
+	transition: opacity .5s;
+}
+.popup .list_item:hover .item_hover, .popup .item_team:hover .item_hover{
+	display: none;
 }
 .wrap_img{
 	width: 90%;
@@ -979,10 +998,16 @@ nav .back_fix{
 	right: 5%;
 	font-size: 2em;
 	cursor: pointer;
+	transition: font .2s;
+}
+.popup .fa-times:hover{
+	font-size: 2.2em;
+	transition: font .2s;
 }
 .popup .item_team,.popup .list_item{
 	width: calc(277px + 15%);
 	height: calc(390px + 25%);
+	cursor: default;
 }
 .popup .description{
 	display: flex;
@@ -1006,6 +1031,7 @@ nav .back_fix{
 	margin: 0;
 }
 .item_team{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -1015,6 +1041,7 @@ nav .back_fix{
 	background-color: #F5F5F5;
 	border-radius: 7px;
 	margin: 20px 0;
+	cursor: pointer;
 }
 .item_team span{
 	font-family: "OpenSansBold";
