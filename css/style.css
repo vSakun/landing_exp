@@ -744,7 +744,6 @@ nav .back_fix{
 	z-index: 1;
 }
 .skill_ob{
-	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -830,6 +829,7 @@ nav .back_fix{
 	border-top-right-radius: 100% 35%;
 	height: 100%;
 	background-color: #EFEFEF;
+	z-index: -1;
 }
 .proj .whwh_blok{
 	width: 50%;
@@ -928,7 +928,7 @@ nav .back_fix{
 	transition: opacity .5s;
 	width: 100%;
 	border-radius: 5px;
-	box-shadow: 0 0 12px rgba(50, 130, 183, .7);;
+	box-shadow: 0 0 15px rgba(50, 130, 183, .7);;
 	height: 100%;
 	z-index: -1;
 }
