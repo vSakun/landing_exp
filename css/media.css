@@ -152,7 +152,6 @@
 	}
 	.item_soc, .item_soc:last-child{
 		border: none;
-		height: 20px;
 	}
 	.foot .lf_mn {
 		justify-content: center;
