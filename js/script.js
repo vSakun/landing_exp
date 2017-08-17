@@ -163,6 +163,96 @@ function popup(){
 		}
 	});
 }
-
-
 popup();
+/*Сортировка по нажатию на пункты меню "Our Projects"*/
+function sort(){
+	$(".mnu_item").on('click',function(){
+		if($(this).attr("class") == "mnu_item activ_punkt"){
+			return;
+		}
+		else{
+		$(".list_item[value=1]").addClass("hideH");
+		$(".list_item[value=2]").addClass("hideH");
+		$(".list_item[value=3]").addClass("hideH");
+		$(".list_item[value=4]").addClass("hideH");
+		$(".list_item[value=5]").addClass("hideH");
+		if( $(this).attr("value") == 1){
+			$(".mnu_item").removeClass("activ_punkt")
+			$(this).addClass("activ_punkt");
+			setTimeout(function (){
+				$(".list_item[value=1]").removeClass("dis_n");
+				$(".list_item[value=2]").removeClass("dis_n");
+				$(".list_item[value=3]").removeClass("dis_n");
+				$(".list_item[value=4]").removeClass("dis_n");
+				$(".list_item[value=5]").removeClass("dis_n");
+			}, 500);
+			setTimeout(function (){
+				$(".list_item[value=1]").removeClass("hideH");
+				$(".list_item[value=2]").removeClass("hideH");
+				$(".list_item[value=3]").removeClass("hideH");
+				$(".list_item[value=4]").removeClass("hideH");
+				$(".list_item[value=5]").removeClass("hideH");
+			}, 550);
+		}
+		else if($(this).attr("value") == 2){
+			$(".mnu_item").removeClass("activ_punkt")
+			$(this).addClass("activ_punkt");
+			setTimeout(function (){
+				$(".list_item[value=2]").removeClass("dis_n");
+			}, 500);
+			setTimeout(function (){
+				$(".list_item[value=1]").addClass("dis_n");
+				$(".list_item[value=2]").removeClass("hideH");
+				$(".list_item[value=3]").addClass("dis_n");
+				$(".list_item[value=4]").addClass("dis_n");
+				$(".list_item[value=5]").addClass("dis_n");
+			}, 550);
+		}
+		else if($(this).attr("value") == 3){
+			$(".mnu_item").removeClass("activ_punkt")
+			$(this).addClass("activ_punkt");
+			setTimeout(function (){
+				$(".list_item[value=3]").removeClass("dis_n");
+			}, 500);
+			setTimeout(function (){
+				$(".list_item[value=1]").addClass("dis_n");
+				$(".list_item[value=2]").addClass("dis_n");
+				$(".list_item[value=3]").removeClass("hideH");
+				$(".list_item[value=4]").addClass("dis_n");
+				$(".list_item[value=5]").addClass("dis_n");
+			}, 550);
+		}
+		else if($(this).attr("value") == 4){
+			$(".mnu_item").removeClass("activ_punkt")
+			$(this).addClass("activ_punkt");
+			setTimeout(function (){
+				$(".list_item[value=4]").removeClass("dis_n");
+			}, 500);
+			setTimeout(function (){
+				$(".list_item[value=1]").addClass("dis_n");
+				$(".list_item[value=2]").addClass("dis_n");
+				$(".list_item[value=3]").addClass("dis_n");
+				$(".list_item[value=4]").removeClass("hideH");
+				$(".list_item[value=5]").addClass("dis_n");
+			}, 550);
+		}
+		else if($(this).attr("value") == 5){
+			$(".mnu_item").removeClass("activ_punkt")
+			$(this).addClass("activ_punkt");
+			setTimeout(function (){
+				$(".list_item[value=5]").removeClass("dis_n");
+			}, 500);
+			setTimeout(function (){
+				$(".list_item[value=1]").addClass("dis_n");
+				$(".list_item[value=2]").addClass("dis_n");
+				$(".list_item[value=3]").addClass("dis_n");
+				$(".list_item[value=4]").addClass("dis_n");
+				$(".list_item[value=5]").removeClass("hideH");
+			}, 550);
+		}
+
+}
+
+	});
+}
+sort();

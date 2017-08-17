@@ -853,6 +853,18 @@ nav .back_fix{
 	width: 100%;
 	margin: 6% 0 2% 0;
 }
+.activ_punkt{
+	border-color: #ffffff;
+	background-color: #ffffff;
+	transition: all .5s;
+}
+.list_proj .hideH{
+	opacity: 0;
+	transition: opacity .5s;
+}
+.list_proj .dis_n{
+	display: none;
+}
 .mnu_item{
 	height: 41px;
 	border-radius: 5px;
@@ -907,8 +919,9 @@ nav .back_fix{
 .list_proj{
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
+	width: 100%;
 }
 .list_item{
 	width: 24%;
@@ -921,6 +934,7 @@ nav .back_fix{
 	border-radius: 5px;
 	margin: 7px 0;
 	cursor: pointer;
+	transition: opacity .5s;
 }
 .item_hover{
 	position: absolute;
