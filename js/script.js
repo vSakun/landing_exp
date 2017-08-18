@@ -37,6 +37,13 @@ $(document).ready(function () {
     	};
     };
   });
+  /*Переход по якарям*/
+  $('a[href^="#"]').click(function(){
+		var el = $(this).attr('href');
+		$('body').animate({
+		scrollTop: $(el).offset().top}, 700);
+		return false;
+	});
 });
 /*действия кнопок в главном меню*/
 $(function(){
