@@ -201,27 +201,7 @@
 	.ob_img img {
 		width: 100%;
 	}
-}
-@media only screen and (max-width : 495px) {
-	html{
-		font-size: 10px;
-	}
-	#project_ob {
-		min-height: 466px;
-	}
-	.whwh_blok {
-		align-items: center;
-		text-align: center;
-	}
-	h1{
-		font-size: 25px;
-	}
-	h2{
-		font-size: 20px;
-	}
-	h2 span{
-		font-size: 63px;
-	}
+
 
 	/*Disable Animation on Mobile Devices*/
  .animated {
@@ -244,6 +224,29 @@
 	-ms-animation: none !important;
 	animation: none !important;
 }
+	
+}
+@media only screen and (max-width : 495px) {
+	html{
+		font-size: 10px;
+	}
+	#project_ob {
+		min-height: 466px;
+	}
+	.whwh_blok {
+		align-items: center;
+		text-align: center;
+	}
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h2 span{
+		font-size: 63px;
+	}
+
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
