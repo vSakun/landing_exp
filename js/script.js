@@ -39,17 +39,17 @@ $(document).ready(function () {
   });
 });
 /*Переход по якарям*/
-  $(document).ready(function(){
-  	$('a[href*=#]').bind("click", function(e){
-  		var anchor = $(this);
-  		$('html, body').stop().animate({
-  			scrollTop: $(anchor.attr('href')).offset().top
-  		}, 700);
-  		e.preventDefault();
-  	});
-  	return false;
-  });
-  /*Не работает в FF*/
+$(document).ready(function(){
+	$('a[href*=#]').bind("click", function(e){
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 700);
+		e.preventDefault();
+	});
+	return false;
+});
+/*Не работает в FF*/
   /*$('a[href^="#"]').click(function(){
 		var el = $(this).attr('href');
 		$('body').animate({
@@ -57,51 +57,49 @@ $(document).ready(function () {
 		return false;
 	});*/
 
-/*Анимация блоков на странице*/
-$(".animation_1").animated("swing", "fadeOut");
-$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
-$(".animation_4").animated("fadeInRight", "fadeOutRight");
-$(".animation_3").animated("flipInX", "flipOutX");
-$(".animation_5").animated("rotateInUpRight", "rotateOutDownRight");
-$(".animation_6").animated("rotateInUpLeft", "rotateOutDownLeft");
-$(".team_row").animated("slideInLeft", "slideOutRight");
-$(".anim_top .rg_mn").animated("slideInLeft", "slideOutLeft");
-$(".anim_top .lf_mn").animated("slideInRight", "slideOutRight");
-$(".column_titl").animated("zoomIn", "zoomOut");
+	/*Анимация блоков на странице*/
+	$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+	$(".animation_4").animated("fadeInRight", "fadeOutRight");
+	$(".animation_3").animated("flipInX", "flipOutX");
+	$(".animation_5").animated("rotateInUpRight", "rotateOutDownRight");
+	$(".animation_6").animated("rotateInUpLeft", "rotateOutDownLeft");
+	$(".item_team").animated("slideInLeft", "slideOutRight");
+	$(".anim_top .rg_mn").animated("slideInLeft", "slideOutLeft");
+	$(".anim_top .lf_mn").animated("slideInRight", "slideOutRight");
 
 
-/*действия кнопок в главном меню*/
-$(function(){
-	$('.smal_mn').on('click',function(){
-		$('.glob_mn').removeClass("glob_fix_add");
-		$('.smal_mn').removeClass("smal_fix");
-		$('.back_mn').removeClass("back_fix");
-		$('.smal_mn p').removeClass("p_fix");
-	});	
-});
-$(function(){
-	$('.back_mn').on('click',function(){
-		$('.glob_mn').addClass("glob_fix_add");
-		$('.smal_mn').addClass("smal_fix");
-		$('.back_mn').addClass("back_fix");
-		$('.smal_mn p').addClass("p_fix");
+	/*действия кнопок в главном меню*/
+	$(function(){
+		$('.smal_mn').on('click',function(){
+			$('.glob_mn').removeClass("glob_fix_add");
+			$('.smal_mn').removeClass("smal_fix");
+			$('.back_mn').removeClass("back_fix");
+			$('.smal_mn p').removeClass("p_fix");
+		});	
 	});
-});
-/*Видоизменения меню в зависимости он ширины(+ чистка ненужных классов)*/
-function windowSize(){
-	if($(window).width() > '768'){
-		if($("all_fix")){
-			$(".smal_mn,.glob_mn,.back_mn").removeClass("all_fix");
-		}
-		else{$('.glob_mn').removeClass("glob_fix_add");
-		$('.smal_mn').removeClass("smal_fix");
-		$('.back_mn').removeClass("back_fix");
-		$('.smal_mn p').removeClass("p_fix");
-	};
-}
-else if($(window).width() < '768'){
-	$('header .bottom_wrap .flex_top').removeClass("top_fix");
-}
+	$(function(){
+		$('.back_mn').on('click',function(){
+			$('.glob_mn').addClass("glob_fix_add");
+			$('.smal_mn').addClass("smal_fix");
+			$('.back_mn').addClass("back_fix");
+			$('.smal_mn p').addClass("p_fix");
+		});
+	});
+	/*Видоизменения меню в зависимости он ширины(+ чистка ненужных классов)*/
+	function windowSize(){
+		if($(window).width() > '768'){
+			if($("all_fix")){
+				$(".smal_mn,.glob_mn,.back_mn").removeClass("all_fix");
+			}
+			else{$('.glob_mn').removeClass("glob_fix_add");
+			$('.smal_mn').removeClass("smal_fix");
+			$('.back_mn').removeClass("back_fix");
+			$('.smal_mn p').removeClass("p_fix");
+		};
+	}
+	else if($(window).width() < '768'){
+		$('header .bottom_wrap .flex_top').removeClass("top_fix");
+	}
 };
 $(window).on('load resize',windowSize);
 
@@ -289,7 +287,12 @@ function sort(){
 }
 sort();
 
+/* Прилоадер */
 $(window).load(function(){
 	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	$(".loader").delay(250).fadeOut("slow");
+
+	/*Анимация логотипа и заголовка H1*/
+	$(".animation_1").animated("swing", "fadeOut");
+	$(".column_titl").animated("zoomIn", "zoomOut");
 })
