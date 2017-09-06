@@ -37,7 +37,8 @@ $(document).ready(function () {
     	};
     };
   });
-  /*Переход по якарям*/
+});
+/*Переход по якарям*/
   $(document).ready(function(){
   	$('a[href*=#]').bind("click", function(e){
   		var anchor = $(this);
@@ -55,7 +56,20 @@ $(document).ready(function () {
 		scrollTop: $(el).offset().top}, 700);
 		return false;
 	});*/
-});
+
+/*Анимация блоков на странице*/
+$(".animation_1").animated("swing", "fadeOut");
+$(".animation_2").animated("fadeInLeft", "fadeOutLeft");
+$(".animation_4").animated("fadeInRight", "fadeOutRight");
+$(".animation_3").animated("flipInX", "flipOutX");
+$(".animation_5").animated("rotateInUpRight", "rotateOutDownRight");
+$(".animation_6").animated("rotateInUpLeft", "rotateOutDownLeft");
+$(".team_row").animated("slideInLeft", "slideOutRight");
+$(".anim_top .rg_mn").animated("slideInLeft", "slideOutLeft");
+$(".anim_top .lf_mn").animated("slideInRight", "slideOutRight");
+$(".column_titl").animated("zoomIn", "zoomOut");
+
+
 /*действия кнопок в главном меню*/
 $(function(){
 	$('.smal_mn').on('click',function(){
