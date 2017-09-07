@@ -118,8 +118,6 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	top: 50%;
 	position: absolute;
 }
-
-
 .wr_centr{
 	display: flex;
 	flex-direction: row;
@@ -131,7 +129,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	height: 100%;
 	position: relative;
 }
-.wr_centr img{
+.wrap_control img{
 	width: 100%;
 }
 .flex_top{
@@ -139,7 +137,7 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: stretch;
-	width: 1157px;
+	width: 70%;
 	height: 100%;
 }
 .top_exempl{
@@ -531,15 +529,13 @@ input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-ind
 	opacity: 1;
 	z-index: 6;
 }
-/* .smal_mn:hover{
-	width: 20%;
-} */
-.smal_mn::after{
+.smal_fix::after{
 	content: "";
 	position: absolute;
 	left: 100%;
-	border: 20px solid transparent;
+	border-top: 20px solid transparent;
 	border-left: 20px solid rgba(50, 130, 183, .7);
+	border-bottom: 20px solid transparent;
 }
 .back_mn{
 	opacity: 0;
@@ -556,7 +552,7 @@ nav .all_fix{
 	top: 0;
 }
 .smal_fix{
-	width: 10%;
+	width: 15%;
 	cursor: pointer;
 	transition: width .5s;
 }
@@ -610,6 +606,7 @@ nav .back_fix{
 /* Слайдер */
 .img_sl{
 	z-index: -1;
+	width: 0;
 }
 .slider_section .flex_top{
 	position: absolute;
@@ -635,18 +632,21 @@ nav .back_fix{
 	position: relative;
 	right: 0;
 	transition: opacity 1s, right .5s;
+	width: 100%;
 }
 .slider_section .act_c{
 	opacity: 1;
 	position: relative;
 	bottom: 0;
 	transition: opacity 1s, bottom .5s;
+	width: 100%;
 }
 .slider_section .act_r{
 	opacity: 1;
 	position: relative;
 	left: 0;
 	transition: opacity 1s, left .5s;
+	width: 100%;
 }
 .sl_cntr{
 	opacity: 0;
@@ -665,6 +665,9 @@ nav .back_fix{
 	position: absolute;
 	left: 999px;
 	transition: left .3s, opacity 1s;
+}
+.wdt_nn{
+	width: 0;
 }
 .control{
 	position: absolute;
@@ -853,11 +856,10 @@ nav .back_fix{
 
 .section_project{
 	position: absolute;
-	left: -50%;
 	top: 0px;
-	width: 200%;
-	border-top-left-radius: 100% 35%;
-	border-top-right-radius: 100% 35%;
+	width: 100%;
+	border-top-left-radius: 100% 8%;
+	border-top-right-radius: 100% 8%;
 	height: 100%;
 	background-color: #EFEFEF;
 	z-index: -1;
@@ -1048,6 +1050,7 @@ nav .back_fix{
 	font-size: 2em;
 	cursor: pointer;
 	transition: font .2s;
+	text-shadow: 1px 1px 2px #000000;
 }
 .popup .fa-times:hover{
 	font-size: 2.2em;
@@ -1101,6 +1104,7 @@ nav .back_fix{
 	font-weight: 500;
 	padding: 0;
 	margin: 0;
+	text-align: center;
 }
 .item_team img{
 	width: 50%;
@@ -1223,7 +1227,6 @@ nav .back_fix{
 }
 #google-container{
 	height:500px;
-	width:2000px;
 }
 .gmnoprint, .gm-style-cc{
 	visibility: hidden;

@@ -1,13 +1,15 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1392px) {
+	.bottom_wrap .flex_top{
+		width: 100%;
+	}
+}
 @media only screen and (max-width : 1200px) {
 	.proj .whwh_blok{
 		width: 100%;
 		align-items: center;
-	}
-	.flex_top{
-		width: 1000px;
 	}
 	.inform_blok .halp_blok{
 		flex-direction: column;
@@ -44,7 +46,6 @@
 		font-size: 1.3em;
 	}
 	.flex_top{
-		width: 800px;
 		justify-content: space-around;
 	}
 	.list_proj{
@@ -93,9 +94,6 @@
 	.top_soc{
 		width: 209px;
 	}
-	.team_row{
-		width: 80%;
-	}
 	#project_ob{
 		min-height: 750px;
 	}
@@ -105,6 +103,12 @@
 @media only screen and (max-width : 768px) {
 	html{
 		font-size: 12px;
+	}
+	.section_skills .halp_blok_column{
+		width: 100%;
+	}
+	.section_skills .halp_blok_column:last-child{
+		border: none;
 	}
 	.topit_mn p{
 		transition: color .5s;
@@ -116,6 +120,9 @@
 	}
 	.top_soc{
 		width: 50%;
+	}
+	.bottom_wrap{
+		border: none;
 	}
 	.bottom_wrap .flex_top{
 		width: 100%;
@@ -137,8 +144,8 @@
 		display: block;
 	}
 	.back_mn{
-	opacity: 1;
-	display: block;
+		opacity: 1;
+		display: block;
 	}
 	.glob_mn li a{
 		color: #ffffff;
@@ -169,19 +176,36 @@
 	#project_ob{
 		min-height: 619px;
 	}
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		CSS transitions
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		CSS transforms
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		CSS animations
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
 }
 @media only screen and (max-width : 618px) {
 	html{
 		font-size: 10px;
 	}
-	.halp_blok_column{
-		width: 100%;
-	}
 	.elements_we{
 		min-height: initial;
-	}
-	.halp_blok_column:last-child{
-		border: none;
 	}
 	.elements_we .ob_img img{
 		margin-bottom: 20px;
@@ -201,30 +225,6 @@
 	.ob_img img {
 		width: 100%;
 	}
-
-
-	/*Disable Animation on Mobile Devices*/
- .animated {
-	CSS transitions
-	-o-transition-property: none !important;
-	-moz-transition-property: none !important;
-	-ms-transition-property: none !important;
-	-webkit-transition-property: none !important;
-	transition-property: none !important;
-	CSS transforms
-	-o-transform: none !important;
-	-moz-transform: none !important;
-	-ms-transform: none !important;
-	-webkit-transform: none !important;
-	transform: none !important;
-	CSS animations
-	-webkit-animation: none !important;
-	-moz-animation: none !important;
-	-o-animation: none !important;
-	-ms-animation: none !important;
-	animation: none !important;
-}
-	
 }
 @media only screen and (max-width : 495px) {
 	html{
@@ -237,6 +237,9 @@
 		align-items: center;
 		text-align: center;
 	}
+	.ob_img{
+		margin-bottom: 10px;
+	}
 	h1{
 		font-size: 25px;
 	}
@@ -246,10 +249,13 @@
 	h2 span{
 		font-size: 63px;
 	}
+	h3{
+		font-size: 2rem;
+	}
 
 }
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 360px) {
 	h1{
 		font-size: 20px;
 	}
@@ -258,9 +264,6 @@
 	}
 	h2 span{
 		font-size: 58px;
-	}
-	#project_ob {
-		min-height: 400px;
 	}
 	.mnu_item span {
 		padding: 2px 3px;
@@ -275,8 +278,19 @@
 		width: 29%;
 	}
 	.smal_mn p{
-	padding: 10px 0;
+		padding: 10px 0;
+	}
+	.logo{
+		width: 330px;
+	}
 }
+@media only screen and (max-width : 320px) {
+	#project_ob {
+		min-height: 400px;
+	}
+	.logo{
+		width: 300px;
+	}
 }
 
 

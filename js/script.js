@@ -73,31 +73,24 @@ $(document).ready(function(){
 		$('.smal_mn').on('click',function(){
 			$('.glob_mn').removeClass("glob_fix_add");
 			$('.smal_mn').removeClass("smal_fix");
-			$('.back_mn').removeClass("back_fix");
 			$('.smal_mn p').removeClass("p_fix");
 		});	
 	});
-	$(function(){
-		$('.back_mn').on('click',function(){
-			$('.glob_mn').addClass("glob_fix_add");
-			$('.smal_mn').addClass("smal_fix");
-			$('.back_mn').addClass("back_fix");
-			$('.smal_mn p').addClass("p_fix");
-		});
-	});
+
+
 	/*Видоизменения меню в зависимости он ширины(+ чистка ненужных классов)*/
 	function windowSize(){
-		if($(window).width() > '768'){
+		if($(window).width() > 768){
 			if($("all_fix")){
-				$(".smal_mn,.glob_mn,.back_mn").removeClass("all_fix");
+				$(".smal_mn,.glob_mn").removeClass("all_fix");
 			}
 			else{$('.glob_mn').removeClass("glob_fix_add");
 			$('.smal_mn').removeClass("smal_fix");
-			$('.back_mn').removeClass("back_fix");
+			/*$('.back_mn').removeClass("back_fix");*/
 			$('.smal_mn p').removeClass("p_fix");
 		};
 	}
-	else if($(window).width() < '768'){
+	else if($(window).width() < 768){
 		$('header .bottom_wrap .flex_top').removeClass("top_fix");
 	}
 };
