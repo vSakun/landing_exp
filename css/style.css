@@ -672,6 +672,7 @@ nav .back_fix{
 .control{
 	position: absolute;
 	bottom: 0px;
+	width: 100%;	
 }
 .wrap_control{
 	position: relative;
@@ -927,7 +928,7 @@ nav .back_fix{
 	color: #6D6E71;
 	transition: color .5s;
 }
-.mnu_item:last-clild{
+.mnu_item:last-child{
 	margin: 0;
 }
 .mnu_item span{
@@ -1251,10 +1252,7 @@ footer{
 }
 .foot .topit_mn{
 	margin: 0;
-	width: none;
-	height: none;
 	background-color: transparent;
-	border-radius: none;
 	width: 80px;
 }
 .foot .lf_mn{
