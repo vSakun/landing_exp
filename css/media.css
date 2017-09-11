@@ -2,9 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1392px) {
-	.bottom_wrap .flex_top{
-		width: 100%;
-	}
+	.glob_mn li a {
+    padding: 0 10px 0 10px;
+  }
 }
 @media only screen and (max-width : 1200px) {
 	.proj .whwh_blok{
@@ -30,6 +30,14 @@
 	.whwh_blok{
 		padding: 0;
 	}
+}
+@media only screen and (max-width : 1170px) {
+	.bottom_wrap .flex_top{
+    width: 100%;
+  }
+  .glob_mn li a {
+    padding: 0 23px 0 23px;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -103,6 +111,9 @@
 @media only screen and (max-width : 768px) {
 	html{
 		font-size: 12px;
+	}
+	.bottom_wrap .flex_top{
+		width: 100%;
 	}
 	.section_skills .halp_blok_column{
 		width: 100%;
