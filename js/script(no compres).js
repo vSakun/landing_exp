@@ -190,7 +190,7 @@ popup();
 /*Сортировка по нажатию на пункты меню "Our Projects"*/
 function sort(){
 	$(".mnu_item").on('click',function(){
-		if($(this).attr("class") == "mnu_item activ_punkt value_f"){
+		if($(this).attr("class") == "mnu_item value_f activ_punkt" || $(this).attr("class") == "mnu_item value_d activ_punkt" || $(this).attr("class") == "mnu_item value_t activ_punkt" || $(this).attr("class") == "mnu_item value_mo activ_punkt" || $(this).attr("class") == "mnu_item value_ut activ_punkt"){
 			return;
 		}
 		else{
